@@ -21,7 +21,7 @@ module.exports = (robot) ->
   #     res.reply "Opening #{doorType} doors"
   #
    robot.respond /is marcos a moron/i, (res) ->
-     res.emote "of course"
+     res.send "of course"
   #
   # lulz = ['lol', 'rofl', 'lmao']
   #
