@@ -10,6 +10,12 @@
 
 module.exports = (robot) ->
 
+  robot.respond /is marcos a moron/i, (res) ->
+    res.send "of course"
+
+  robot.respond /vc gosta de maria/i, (res) ->
+    res.send "nao nao nao nao nao nao nao nao!!!!!"
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
@@ -20,8 +26,6 @@ module.exports = (robot) ->
   #   else
   #     res.reply "Opening #{doorType} doors"
   #
-   robot.respond /is marcos a moron/i, (res) ->
-     res.send "of course"
   #
   # lulz = ['lol', 'rofl', 'lmao']
   #
