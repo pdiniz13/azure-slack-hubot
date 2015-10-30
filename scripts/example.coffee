@@ -20,8 +20,8 @@ module.exports = (robot) ->
   #   else
   #     res.reply "Opening #{doorType} doors"
   #
-  # robot.hear /I like pie/i, (res) ->
-  #   res.emote "makes a freshly baked pie"
+   robot.hear /is marcos a moron/i, (res) ->
+     res.emote "of course"
   #
   # lulz = ['lol', 'rofl', 'lmao']
   #
