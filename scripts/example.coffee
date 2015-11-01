@@ -19,8 +19,32 @@ module.exports = (robot) ->
   robot.respond /is paulo gay/i, (res) ->
     res.send "nope"
 
-  robot.respond /vc gosta de maria jose/i, (res) ->
-    res.send "nao nao nao nao nao nao nao nao!!!!!"
+  robot.hear /cat/i, (res) ->
+   res.send "cat? CAT? CAT? CAT? CAT? did someone see a CAT?"
+
+  robot.hear /treats/i, (res) ->
+    res.send "Treats? Where are the treats? I want treats!!!!!!!"
+
+  robot.respond /do you like (.*)/i, (res) ->
+   name = res.match[1].toLowerCase()
+   if name is "paulo"
+     res.reply "YES!!!!!!!!!!!!"
+   else
+     res.reply "NO!!!!!!!!!!!!! Get Away from me!!!!"
+
+  robot.respond /voce gosta de (.*)/i, (res) ->
+    name = res.match[1].toLowerCase()
+    if name is "paulo"
+      res.reply "SIM!!!!!!!!!!!!"
+    else
+      res.reply "NAO NAO NAO!!!!!!!!!!!!!"
+
+  robot.respond /vc gosta de (.*)/i, (res) ->
+    name = res.match[1].toLowerCase()
+    if name is "paulo"
+      res.reply "SIM!!!!!!!!!!!!"
+    else
+      res.reply "NAO NAO NAO!!!!!!!!!!!!!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
