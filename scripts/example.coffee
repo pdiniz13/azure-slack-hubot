@@ -13,7 +13,13 @@ module.exports = (robot) ->
   robot.respond /is marcos a moron/i, (res) ->
     res.send "of course"
 
-  robot.respond /vc gosta de maria/i, (res) ->
+  robot.respond /is marcos gay/i, (res) ->
+    res.send "Let's just say that if marcos isn't gay water is not wet, ice is not cold, and fire is not hot."
+
+  robot.respond /is paulo gay/i, (res) ->
+    res.send "nope"
+
+  robot.respond /vc gosta de maria jose/i, (res) ->
     res.send "nao nao nao nao nao nao nao nao!!!!!"
 
   # robot.hear /badger/i, (res) ->
