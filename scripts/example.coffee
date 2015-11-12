@@ -34,14 +34,14 @@ module.exports = (robot) ->
 
   robot.respond /voce gosta de (.*)/i, (res) ->
     name = res.match[1].toLowerCase()
-    if name is "paulo"
+    if name is "paulo" or "paulo?"
       res.reply "SIM!!!!!!!!!!!!"
     else
       res.reply "NAO NAO NAO!!!!!!!!!!!!!"
 
   robot.respond /vc gosta de (.*)/i, (res) ->
     name = res.match[1].toLowerCase()
-    if name is "paulo"
+    if name is "paulo" or "paulo?"
       res.reply "SIM!!!!!!!!!!!!"
     else
       res.reply "NAO NAO NAO!!!!!!!!!!!!!"
